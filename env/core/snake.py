@@ -38,7 +38,7 @@ class Snake:
             self.current_direction_index = action
         # Remove tail
         tail = 1
-        self.blocks =
+        self.blocks = 1
         # Check new head
         new_head =
         # Add new head
