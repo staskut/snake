@@ -10,13 +10,10 @@ class Snake:
         @param direction_index: int
         @param length: int
         """
-        self.head_position =
-        self.current_direction_index =
-        self.length = 3
         # Information snake need to know to make the move
-                self.snake_block = SNAKE_BLOCK
+        self.snake_block = SNAKE_BLOCK
         self.current_direction_index = direction_index
-                # Alive identifier
+        # Alive identifier
         self.alive = True
         # Place the snake
         self.blocks = [head_position]
@@ -31,14 +28,12 @@ class Snake:
         @param action: int
         @param return: tuple, tuple
         """
-        self.action
-        return
         # Check if action can be performed (do nothing if in the same direction or opposite)
-        if () and ():
+        if (action != self.current_direction_index) and (action != -self.current_direction_index):
             self.current_direction_index = action
         # Remove tail
-        tail = 1
-        self.blocks = 1
+        tail =
+        self.blocks =
         # Check new head
         new_head =
         # Add new head
